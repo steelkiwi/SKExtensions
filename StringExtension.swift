@@ -1,6 +1,5 @@
 //
 //  StringExtension.swift
-//  ChainedAnimations
 //
 //  Created by Borys Khliebnikov on 3/22/17.
 //  Copyright © 2017 Borys Khliebnikov. All rights reserved.
