@@ -15,6 +15,11 @@ extension UIViewController {
         return UIApplication.shared.delegate as! AppDelegate
     }
     
+    /// Detect if controller was presented
+    var isPresented: Bool {
+        return (self.presentingViewController != nil || self.navigationController?.presentingViewController != nil)
+    }
+    
     /// Simple alert popup extension
     /// - Parameter title:          Alert title
     /// - Parameter message:        Alert message
@@ -25,8 +30,13 @@ extension UIViewController {
                                                 preferredStyle: UIAlertControllerStyle.alert)
         let action = UIAlertAction.init(title: buttonTitle, style: UIAlertActionStyle.cancel, handler: handler)
         controller.addAction(action)
-        controller.view.tintColor = UIColor.rdxtRedColor()
         present(controller, animated: true, completion: nil)
     }
     
+    func showAlert(title: String? = nil, message: String, buttons: Array<UIAlertAction>) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        buttons.forEach({ alert.addAction($0) })
+        
+        present(controller, animated: true, completion: nil)
+    }
 }
