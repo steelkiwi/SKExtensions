@@ -108,6 +108,30 @@ extension String {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
         return Regex.init(emailRegEx).match(self)
     }
+    
+    /************************************************************
+     *We get to have Apple engineers writing regular expressions* 
+     *instead of dropping in a long string of line noise-like   * 
+     *characters that we can only pretend to understand.        * 
+     ***********************************************************/
+    
+    /// Returns valid emails array from string. Native solution
+    func emailAddresses() -> [String] {
+        var addresses = [String]()
+        if let detector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue) {
+            let matches = detector.matches(in: self, options: [], range: NSMakeRange(0, self.count))
+            for match in matches {
+                if let matchURL = match.url,
+                    let matchURLComponents = URLComponents(url: matchURL, resolvingAgainstBaseURL: false),
+                    matchURLComponents.scheme == "mailto"
+                {
+                    let address = matchURLComponents.path
+                    addresses.append(String(address))
+                }
+            }
+        }
+        return addresses
+    }
 }
 
 @available(swift 3.1)
