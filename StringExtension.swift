@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
     
@@ -26,11 +27,6 @@ extension String {
         return self.unicodeScalars.split {
             !charset.contains($0)
             }.map(String.init)
-    }
-    
-    /// Characters count on string
-    var length: Int {
-        return characters.count
     }
     
     /// Calculate string height with passed params
@@ -57,9 +53,8 @@ extension String {
 extension String {
     
     func capitalizedFirstLetter() -> String {
-        let first = String(characters.prefix(1)).capitalized
-        let other = String(characters.dropFirst())
-        return first + other
+        guard let first = self.first else { return .empty }
+        return String(first).uppercased() + dropFirst()
     }
     
     mutating func capitalizeFirstLetter() {

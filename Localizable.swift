@@ -53,10 +53,10 @@ extension UIView {
         get { return self.getStored(key: &associatedKeyTable) }
         set {
             self.setStored(string: newValue, key: &associatedKeyTable)
-            if var localSelf = self as? Localizable {
-                localSelf.localizationKey = localSelf.localizationKey
-            }
-            
+            if let localSelf = self as? Localizable {
+                var varSelf = localSelf
+                varSelf.localizationKey = localSelf.localizationKey
+            }            
         }
     }
 }

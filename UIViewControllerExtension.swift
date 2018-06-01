@@ -11,7 +11,7 @@ import UIKit
 extension UIViewController {
     
     /// Quick access to application delegate
-    var appDelegate:AppDelegate {
+    var appDelegate: AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
     }
     
@@ -37,6 +37,6 @@ extension UIViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         buttons.forEach({ alert.addAction($0) })
         
-        present(controller, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
     }
 }
