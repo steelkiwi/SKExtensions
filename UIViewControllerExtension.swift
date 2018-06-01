@@ -10,11 +10,6 @@ import UIKit
 
 extension UIViewController {
     
-    /// Quick access to application delegate
-    var appDelegate: AppDelegate {
-        return UIApplication.shared.delegate as! AppDelegate
-    }
-    
     /// Detect if controller was presented
     var isPresented: Bool {
         return (self.presentingViewController != nil || self.navigationController?.presentingViewController != nil)
