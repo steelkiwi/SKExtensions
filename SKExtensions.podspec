@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SKExtensions"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "Common used Extensions in Swift"
 
   s.description  = <<-DESC
@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig   = { 'SWIFT_VERSION' => '4.1' }
   s.swift_version         = "4.1"
 
-  s.source_files  = "Classes", "*.swift"
+  s.source_files  = "Classes", "/Sources/*.swift"
 
 end
