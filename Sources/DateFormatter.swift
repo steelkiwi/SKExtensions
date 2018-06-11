@@ -10,7 +10,7 @@ import Foundation
 
 public extension DateFormatter {
     
-    convenience init(dateFormat: String) {
+    public convenience init(dateFormat: String) {
         self.init()
         self.dateFormat = dateFormat
     }

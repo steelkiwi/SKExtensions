@@ -14,7 +14,7 @@ public extension String {
     ///
     /// - Parameter tableName: .strings file name
     /// - Returns: localized value if found. Key (self) otherwise
-    func localized(tableName: String? = nil) -> String {
+    public func localized(tableName: String? = nil) -> String {
         return NSLocalizedString("\(self)", tableName: tableName, comment: "") // Wrapped self into string for localization export support
     }
 }
@@ -49,7 +49,7 @@ public extension UIView {
   
     // Set as @IBInspectable if you use separated .strings files and want to define them in storyboard
     /// Name of .strings file
-    var localizationFile: String? {
+    public var localizationFile: String? {
         get { return self.getStored(key: &associatedKeyTable) }
         set {
             self.setStored(string: newValue, key: &associatedKeyTable)
@@ -66,10 +66,10 @@ public extension UIView {
 private var associatedKeyText:        UInt8 = 1
 private var associatedKeyPlaceholder: UInt8 = 2
 
-public extension UILabel: Localizable {
+extension UILabel: Localizable {
     
     @IBInspectable
-    var localizationKey: String? {
+    public var localizationKey: String? {
         get { return self.getStored(key: &associatedKeyText) }
         set {
             self.setStored(string: newValue, key: &associatedKeyText)
@@ -82,7 +82,7 @@ public extension UILabel: Localizable {
 public extension UIButton {
     
     @IBInspectable
-    var localizationKey: String? {
+    public var localizationKey: String? {
         get { return self.getStored(key: &associatedKeyText) }
         set {
             self.setStored(string: newValue, key: &associatedKeyText)
@@ -95,7 +95,7 @@ public extension UIButton {
 public extension UITextField {
     
     @IBInspectable
-    var localizationKey: String? {
+    public var localizationKey: String? {
         get { return self.getStored(key: &associatedKeyText) }
         set {
             self.setStored(string: newValue, key: &associatedKeyText)
@@ -105,7 +105,7 @@ public extension UITextField {
     }
     
     @IBInspectable
-    var localizationPlaceholderKey: String? {
+    public var localizationPlaceholderKey: String? {
         get { return self.getStored(key: &associatedKeyPlaceholder) }
         set {
             self.setStored(string: newValue, key: &associatedKeyPlaceholder)

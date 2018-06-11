@@ -9,6 +9,7 @@
 import Foundation
 
 public extension Date {
+    
     static func <(a: Date, b: Date) -> Bool {
         return a.compare(b) == .orderedAscending
     }

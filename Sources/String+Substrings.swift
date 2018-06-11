@@ -12,14 +12,14 @@ import UIKit
 
 public extension String {
     
-    func substring(to index: Int) -> String {
+    public func substring(to index: Int) -> String {
         guard self.endIndex.encodedOffset >= index else { return self }
         
         let endIndex = self.index(self.startIndex, offsetBy: index)
         return String(self[..<endIndex])
     }
     
-    func substring(from index: Int) -> String {
+    public func substring(from index: Int) -> String {
         guard index <= self.endIndex.encodedOffset else { return String.empty }
         
         let startIndex = self.index(self.startIndex, offsetBy: index)

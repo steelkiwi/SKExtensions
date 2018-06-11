@@ -10,7 +10,7 @@ import UIKit
 
 public extension Array where Element: Equatable {
     
-    func contains(_ subArray: [Element]) -> Bool {
+    public func contains(_ subArray: [Element]) -> Bool {
         
         // This is to prevent construction of a range from zero to negative
         guard self.count >= subArray.count else { return false }

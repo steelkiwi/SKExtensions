@@ -81,7 +81,7 @@ public extension Regex {
     }
 }
 
-public extension Regex: ExpressibleByStringLiteral {
+extension Regex: ExpressibleByStringLiteral {
     
     public init(stringLiteral value: String) {
         regexp = value
@@ -94,7 +94,7 @@ public extension Regex: ExpressibleByStringLiteral {
     }
 }
 
-public extension Regex: CustomStringConvertible {
+extension Regex: CustomStringConvertible {
     
     public var description: String {
         return "/\(regexp)/"
