@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension String {
+public extension String {
     
     /// Get self as key and return related localized value
     ///
@@ -45,7 +45,7 @@ fileprivate extension UIView {
 
 private var associatedKeyTable: UInt8 = 0
 
-extension UIView {
+public extension UIView {
   
     // Set as @IBInspectable if you use separated .strings files and want to define them in storyboard
     /// Name of .strings file
@@ -66,7 +66,7 @@ extension UIView {
 private var associatedKeyText:        UInt8 = 1
 private var associatedKeyPlaceholder: UInt8 = 2
 
-extension UILabel: Localizable {
+public extension UILabel: Localizable {
     
     @IBInspectable
     var localizationKey: String? {
@@ -79,7 +79,7 @@ extension UILabel: Localizable {
     }
 }
 
-extension UIButton {
+public extension UIButton {
     
     @IBInspectable
     var localizationKey: String? {
@@ -92,7 +92,7 @@ extension UIButton {
     }
 }
 
-extension UITextField {
+public extension UITextField {
     
     @IBInspectable
     var localizationKey: String? {

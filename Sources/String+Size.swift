@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Size
 
-extension String {
+public extension String {
     
     /// Calculate string height with passed params
     ///

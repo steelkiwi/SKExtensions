@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Empty
 
-extension String {
+public extension String {
     
     static var empty: String { return "" }
     
@@ -21,7 +21,7 @@ extension String {
 }
 
 // Extension on Optional type for empty check on unwrapped string
-extension Optional where Wrapped == String {
+public extension Optional where Wrapped == String {
     
     var isBlank: Bool {
         return self?.isBlank ?? true

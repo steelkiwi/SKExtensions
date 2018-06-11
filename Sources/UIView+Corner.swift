@@ -9,7 +9,7 @@ import UIKit
 
 // MARK: - Corners
 
-extension UIView {
+public extension UIView {
     
     private var halfHeight: CGFloat { return self.bounds.height / 2 }
     

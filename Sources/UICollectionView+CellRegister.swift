@@ -8,11 +8,11 @@
 
 import UIKit
 
-extension UICollectionViewCell {
+public extension UICollectionViewCell {
     static var identifier: String { return String(describing: self) }
 }
 
-extension UICollectionView {
+public extension UICollectionView {
     
     /// Register cell wrapper function
     /// Register passed cell class with class name as identifier

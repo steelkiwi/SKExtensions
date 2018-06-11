@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Filter
 
-extension String {
+public extension String {
     
     func clean(accordingTo set: CharacterSet) -> String {
         return self.filter { String($0).rangeOfCharacter(from: set.inverted) == nil }

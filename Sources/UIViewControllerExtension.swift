@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
     
     /// Detect if controller was presented
     var isPresented: Bool {

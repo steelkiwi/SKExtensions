@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UILabel {
+public extension UILabel {
     
     var requiredHeight: CGFloat {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: CGFloat.greatestFiniteMagnitude))

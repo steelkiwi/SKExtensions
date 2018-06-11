@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Substrings
 
-extension String {
+public extension String {
     
     func substring(to index: Int) -> String {
         guard self.endIndex.encodedOffset >= index else { return self }

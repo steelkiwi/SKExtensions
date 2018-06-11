@@ -17,8 +17,7 @@ public struct Regex {
     }
 }
 
-
-extension Regex {
+public extension Regex {
     /// Returns true if the string argument matches the expression.
     public func match(_ text: String) -> Bool {
         // If the regex starts with ^, then it can only match the
@@ -82,7 +81,8 @@ extension Regex {
     }
 }
 
-extension Regex: ExpressibleByStringLiteral {
+public extension Regex: ExpressibleByStringLiteral {
+    
     public init(stringLiteral value: String) {
         regexp = value
     }
@@ -94,7 +94,8 @@ extension Regex: ExpressibleByStringLiteral {
     }
 }
 
-extension Regex: CustomStringConvertible {
+public extension Regex: CustomStringConvertible {
+    
     public var description: String {
         return "/\(regexp)/"
     }

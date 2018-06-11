@@ -8,11 +8,11 @@
 
 import UIKit
 
-extension UITableViewCell {
+public extension UITableViewCell {
     static var identifier: String { return String(describing: self) }
 }
 
-extension UITableView {
+public extension UITableView {
     
     /// Register cell wrapper function
     /// Register passed cell class with class name as identifier

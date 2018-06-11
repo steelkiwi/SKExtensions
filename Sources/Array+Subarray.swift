@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension Array where Element: Equatable {
+public extension Array where Element: Equatable {
     
     func contains(_ subArray: [Element]) -> Bool {
         

@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Capitalizing
 
-extension String {
+public extension String {
     
     func capitalizedFirstLetter() -> String {
         guard let first = self.first else { return .empty }

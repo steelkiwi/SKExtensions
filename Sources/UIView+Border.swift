@@ -9,7 +9,7 @@ import UIKit
 
 // MARK: - Borders
 
-extension UIView {
+public extension UIView {
     
     @IBInspectable
     var borderWidth: CGFloat {
