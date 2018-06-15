@@ -8,7 +8,7 @@
 
 import UIKit
 
-let kAnimationDurationDefault: Double = 0.35
+public let kAnimationDurationDefault: Double = 0.35
 
 public extension UIView {
     
