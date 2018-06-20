@@ -9,7 +9,7 @@ import UIKit
 
 // MARK: - CATransitionType
 
-enum CATransitionType: RawRepresentable {
+public enum CATransitionType: RawRepresentable {
     case fade
     case moveIn
     case push
@@ -39,9 +39,9 @@ enum CATransitionType: RawRepresentable {
 
 // MARK: - CATransitionSubtype
 
-typealias CATransitionDirection = CATransitionSubtype
+public typealias CATransitionDirection = CATransitionSubtype
 
-enum CATransitionSubtype: RawRepresentable {
+public enum CATransitionSubtype: RawRepresentable {
     case fromTop
     case fromLeft
     case fromBottom
@@ -71,9 +71,9 @@ enum CATransitionSubtype: RawRepresentable {
 
 // MARK: - UINavigationController
 
-extension UINavigationController {
+public extension UINavigationController {
     
-    private func addTransition(transitionType type: CATransitionType, transitionDirection direction: CATransitionDirection) {
+    public func addTransition(transitionType type: CATransitionType, transitionDirection direction: CATransitionDirection) {
         let transition = CATransition()
         transition.duration = 0.35
         transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
@@ -83,12 +83,12 @@ extension UINavigationController {
         self.view.layer.add(transition, forKey: nil)
     }
 
-    func pushViewControllerCustom(_ viewController: UIViewController) {
+    public func pushViewControllerCustom(_ viewController: UIViewController) {
         self.addTransition(transitionType: .push, transitionDirection: .fromRight)
         self.pushViewController(viewController, animated: false)
     }
     
-    func popViewControllerCustom() {
+    public func popViewControllerCustom() {
         self.addTransition(transitionType: .push, transitionDirection: .fromLeft)
         self.popViewController(animated: false)
     }

@@ -1,6 +1,6 @@
 //
 //  UIView.swift
-//  Wod
+//  
 //
 //  Created by Viktor Olesenko on 16.11.17.
 //

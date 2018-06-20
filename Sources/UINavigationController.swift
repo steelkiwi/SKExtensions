@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UINavigationController {
+public extension UINavigationController {
     
-    func replace(vc oldVC: UIViewController, with newVC: UIViewController, duration: TimeInterval = 0.35, animationOptions: UIViewAnimationOptions?, completion: ((Bool) -> Void)? = nil) {
+    public func replace(vc oldVC: UIViewController, with newVC: UIViewController, duration: TimeInterval = 0.35, animationOptions: UIViewAnimationOptions?, completion: ((Bool) -> Void)? = nil) {
         guard let index = self.viewControllers.index(of: oldVC) else { return }
         
         self.viewControllers[index] = newVC
