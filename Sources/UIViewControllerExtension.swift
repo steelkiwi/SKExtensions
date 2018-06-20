@@ -18,16 +18,7 @@ public extension UIViewController {
     /// Simple alert popup extension
     /// - Parameter title:          Alert title
     /// - Parameter message:        Alert message
-    /// - Parameter buttonTitle:    Cancel action button title
-    public func showAlert(title: String! = "", message: String!, buttonTitle: String! = "OK", handler: ((UIAlertAction) -> Void)? = nil) {
-        let controller = UIAlertController.init(title: title,
-                                                message: message,
-                                                preferredStyle: UIAlertControllerStyle.alert)
-        let action = UIAlertAction.init(title: buttonTitle, style: UIAlertActionStyle.cancel, handler: handler)
-        controller.addAction(action)
-        present(controller, animated: true, completion: nil)
-    }
-    
+    /// - Parameter buttons:        List of buttons for displaying
     public func showAlert(title: String? = nil, message: String, buttons: Array<UIAlertAction>) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         buttons.forEach({ alert.addAction($0) })
