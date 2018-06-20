@@ -15,3 +15,13 @@ func +<Key, Value>(left: Dictionary<Key, Value>, right: Dictionary<Key, Value>) 
     
     return result
 }
+
+extension Dictionary {
+    
+    mutating func append(contentsOf right: Dictionary) {
+        for (key, value) in right {
+            self[key] = value
+        }
+    }
+}
+
