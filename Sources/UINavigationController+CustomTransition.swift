@@ -15,9 +15,9 @@ public enum CATransitionType: RawRepresentable {
     case push
     case reveal
     
-    typealias RawValue = String
+    public typealias RawValue = String
     
-    init?(rawValue: CATransitionType.RawValue) {
+    public init?(rawValue: CATransitionType.RawValue) {
         switch rawValue {
         case kCATransitionFade:     self = .fade
         case kCATransitionMoveIn:   self = .moveIn
@@ -27,7 +27,7 @@ public enum CATransitionType: RawRepresentable {
         }
     }
     
-    var rawValue: CATransitionType.RawValue {
+    public var rawValue: CATransitionType.RawValue {
         switch self {
         case .fade:     return kCATransitionFade
         case .moveIn:   return kCATransitionMoveIn
@@ -47,9 +47,9 @@ public enum CATransitionSubtype: RawRepresentable {
     case fromBottom
     case fromRight
     
-    typealias RawValue = String
+    public typealias RawValue = String
     
-    init?(rawValue: CATransitionType.RawValue) {
+    public init?(rawValue: CATransitionType.RawValue) {
         switch rawValue {
         case kCATransitionFromTop:      self = .fromTop
         case kCATransitionFromLeft:     self = .fromLeft
@@ -59,7 +59,7 @@ public enum CATransitionSubtype: RawRepresentable {
         }
     }
     
-    var rawValue: CATransitionType.RawValue {
+    public var rawValue: CATransitionType.RawValue {
         switch self {
         case .fromTop:      return kCATransitionFromTop
         case .fromLeft:     return kCATransitionFromLeft
