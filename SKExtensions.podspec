@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SKExtensions"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "Common used Extensions in Swift"
 
   s.description  = <<-DESC
