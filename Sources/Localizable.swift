@@ -14,7 +14,7 @@ public extension String {
     ///
     /// - Parameter tableName: .strings file name
     /// - Returns: localized value if found. Key (self) otherwise
-    func localized(tableName: String? = nil, arguments: JSON? = nil) -> String {
+    public func localized(tableName: String? = nil, arguments: JSON? = nil) -> String {
         
         var localizedValue = NSLocalizedString("\(self)", tableName: tableName, comment: "") // Wrapped self into string for localization export support
         
@@ -28,12 +28,12 @@ public extension String {
         return localizedValue
     }
     
-    func localizedPlural(value: Int) -> String {
+    public func localizedPlural(value: Int) -> String {
         return String.localizedStringWithFormat(self.localized(), value)
     }
 }
 
-protocol Localizable {
+public protocol Localizable {
     
     /// Key for localization value
     var localizationKey:  String? { get set }
@@ -80,7 +80,7 @@ public extension UIView {
 private var associatedKeyText:        UInt8 = 1
 private var associatedKeyPlaceholder: UInt8 = 2
 
-extension UILabel: Localizable {
+public extension UILabel: Localizable {
     
     @IBInspectable
     public var localizationKey: String? {
