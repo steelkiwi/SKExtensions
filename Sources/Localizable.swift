@@ -14,7 +14,7 @@ public extension String {
     ///
     /// - Parameter tableName: .strings file name
     /// - Returns: localized value if found. Key (self) otherwise
-    public func localized(tableName: String? = nil, arguments: JSON? = nil) -> String {
+    public func localized(tableName: String? = nil, arguments: Dictionary<String, Any>? = nil) -> String {
         
         var localizedValue = NSLocalizedString("\(self)", tableName: tableName, comment: "") // Wrapped self into string for localization export support
         
