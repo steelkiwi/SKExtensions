@@ -80,7 +80,7 @@ public extension UIView {
 private var associatedKeyText:        UInt8 = 1
 private var associatedKeyPlaceholder: UInt8 = 2
 
-public extension UILabel: Localizable {
+public extension UILabel {
     
     @IBInspectable
     public var localizationKey: String? {
