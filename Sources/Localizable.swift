@@ -8,15 +8,30 @@
 
 import UIKit
 
+public extension Bundle {
+    
+    /// Get Bundle for passed language code (ex: "en", "es", "zh" etc).
+    ///
+    /// Returns nil if there is no bundle for this language.
+    ///
+    /// Example: Bundle.init(languageCode: "en")
+    ///
+    public convenience init?(languageCode: String) {
+        guard let bundlePath = Bundle.main.path(forResource: languageCode, ofType: "lproj") else { return nil }
+        
+        self.init(path: bundlePath)
+    }
+}
+
 public extension String {
     
     /// Get self as key and return related localized value
     ///
     /// - Parameter tableName: .strings file name
     /// - Returns: localized value if found. Key (self) otherwise
-    public func localized(tableName: String? = nil, arguments: Dictionary<String, Any>? = nil) -> String {
+    public func localized(tableName: String? = nil, bundle: Bundle = Bundle.main, arguments: Dictionary<String, Any>? = nil) -> String {
         
-        var localizedValue = NSLocalizedString("\(self)", tableName: tableName, comment: "") // Wrapped self into string for localization export support
+        var localizedValue = NSLocalizedString("\(self)", tableName: tableName, bundle: bundle, comment: "") // Wrapped self into string for localization export support
         
         if let arguments = arguments {
             for key in arguments.keys {
