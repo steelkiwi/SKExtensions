@@ -57,17 +57,4 @@ public extension UIImage {
         
         return scaled
     }
-    
-    public func downsample(to pointSize: CGSize, scale: CGFloat) -> UIImage {
-        let imageSourceOptions = [kCGImageSourceShouldCache: false] as CFDictionary
-        let imageSource = CGImageSourceCreateWithData(self.sd_imageData()! as CFData, imageSourceOptions)!
-        
-        let maxDimensionInPixels = max(pointSize.width, pointSize.height) * scale
-        let downsampleOptions = [kCGImageSourceCreateThumbnailFromImageAlways: true,
-                                 kCGImageSourceShouldCacheImmediately: true,
-                                 kCGImageSourceCreateThumbnailWithTransform: true,
-                                 kCGImageSourceThumbnailMaxPixelSize: maxDimensionInPixels] as CFDictionary
-        let downsampleImage = CGImageSourceCreateThumbnailAtIndex(imageSource, 0, downsampleOptions)
-        return UIImage(cgImage: downsampleImage!)
-    }
 }
