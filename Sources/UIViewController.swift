@@ -20,6 +20,12 @@ public extension UIViewController {
     
     // MARK: - Navigation
     
+    /// Detect if viewController is on the screen
+    public var isVisible: Bool {
+        return self.viewIfLoaded?.window != nil
+    }
+    
+    /// Dismiss viewController (if exist), presented from self
     public func dismissPresentedVC(animated: Bool = true, completion: (() -> Void)? = nil) {
         self.presentedViewController?.dismiss(animated: animated, completion: completion)
     }
