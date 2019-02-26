@@ -26,10 +26,9 @@ extension UIViewController {
                 return 0
         }
         
-        // Detect keyboard start position for current active VC. Also takes into account safe area and child VC insets
-        let keyboardY = UIApplication.shared.keyWindow!.convert(keyboardFrame.origin, to: self.view).y        
-        let bottomOffset = self.view.safeAreaInsets.bottom
-        let kbHeight = self.view.bounds.height - keyboardY - bottomOffset
+        // Detect keyboard start position for current active VC. Also takes into account safe area and child VC insets        
+        let keyboardY = UIApplication.shared.keyWindow!.convert(keyboardFrame.origin, to: self.view).y
+        let kbHeight = self.view.bounds.height - keyboardY
         
         return kbHeight
     }
