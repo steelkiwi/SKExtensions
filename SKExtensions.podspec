@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SKExtensions"
-  s.version      = "1.0.10"
+  s.version      = "1.0.11"
   s.summary      = "Common used Extensions in Swift"
 
   s.description  = <<-DESC
@@ -20,10 +20,10 @@ Pod::Spec.new do |s|
     :git => "https://github.com/steelkiwi/SKExtensions.git",
     :tag => s.version
   }
-  s.ios.deployment_target = '10.3'
-  s.pod_target_xcconfig   = { 'SWIFT_VERSION' => '4.1' }
-  s.swift_version         = "4.1"
+  s.ios.deployment_target = '12.1'
+  s.pod_target_xcconfig   = { 'SWIFT_VERSION' => '4.2' }
+  s.swift_version         = "4.2"
 
-  s.source_files  = "Classes", "Sources/*.swift"
+  s.source_files  = "Classes", "SKExtensions/Sources/*.swift"
 
 end

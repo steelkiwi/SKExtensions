@@ -10,7 +10,7 @@ import UIKit
 
 public extension UINavigationController {
     
-    public func replace(vc oldVC: UIViewController, with newVC: UIViewController, duration: TimeInterval = 0.35, animationOptions: UIViewAnimationOptions?, completion: ((Bool) -> Void)? = nil) {
+    public func replace(vc oldVC: UIViewController, with newVC: UIViewController, duration: TimeInterval = 0.35, animationOptions: UIView.AnimationOptions?, completion: ((Bool) -> Void)? = nil) {
         guard let index = self.viewControllers.index(of: oldVC) else { return }
         
         self.viewControllers[index] = newVC

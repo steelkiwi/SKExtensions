@@ -14,7 +14,7 @@ public extension UIImage {
         var compression: CGFloat = 1
         
         while compression > 0 {
-            guard let data = UIImageJPEGRepresentation(self, compression),
+            guard let data = self.jpegData(compressionQuality: compression),
                 data.count < bytesSize else {
                     compression -= step
                     continue
@@ -25,7 +25,7 @@ public extension UIImage {
         
         assertionFailure("Failed to compress image with passed parameters")
         
-        let data = UIImageJPEGRepresentation(self, step)!
+        let data = self.jpegData(compressionQuality: step)!
         return UIImage.init(data: data)!
     }
     

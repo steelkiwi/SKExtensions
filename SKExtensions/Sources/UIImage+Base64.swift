@@ -11,7 +11,7 @@ import UIKit
 public extension UIImage {
     
     public var base64EncodedString: String? {
-        return UIImagePNGRepresentation(self)?.base64EncodedString()
+        return self.pngData()?.base64EncodedString()
     }
     
     public convenience init?(base64EncodedString: String) {
