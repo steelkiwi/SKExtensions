@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
     :git => "https://github.com/steelkiwi/SKExtensions.git",
     :tag => s.version
   }
-  s.ios.deployment_target = '12.1'
+  s.ios.deployment_target = '10.0'
   s.pod_target_xcconfig   = { 'SWIFT_VERSION' => '4.2' }
   s.swift_version         = "4.2"
 

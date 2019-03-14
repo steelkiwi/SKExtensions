@@ -12,7 +12,21 @@
 		777DE155222ABDFF008650A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777DE153222ABDFF008650A5 /* Main.storyboard */; };
 		777DE157222ABE01008650A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777DE156222ABE01008650A5 /* Assets.xcassets */; };
 		777DE15A222ABE01008650A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777DE158222ABE01008650A5 /* LaunchScreen.storyboard */; };
+		77AFD366223AA9FB006A73C3 /* SKExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AFD365223AA9FB006A73C3 /* SKExtensions.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77AFD363223AA9F1006A73C3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		777DE14C222ABDFF008650A5 /* SKExtensions-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SKExtensions-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +36,7 @@
 		777DE156222ABE01008650A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		777DE159222ABE01008650A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		777DE15B222ABE01008650A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77AFD365223AA9FB006A73C3 /* SKExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SKExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77AFD366223AA9FB006A73C3 /* SKExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +56,7 @@
 			children = (
 				777DE14E222ABDFF008650A5 /* SKExtensions-Test */,
 				777DE14D222ABDFF008650A5 /* Products */,
+				77AFD364223AA9FB006A73C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = "SKExtensions-Test";
 			sourceTree = "<group>";
 		};
+		77AFD364223AA9FB006A73C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77AFD365223AA9FB006A73C3 /* SKExtensions.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 				777DE148222ABDFF008650A5 /* Sources */,
 				777DE149222ABDFF008650A5 /* Frameworks */,
 				777DE14A222ABDFF008650A5 /* Resources */,
+				77AFD363223AA9F1006A73C3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,7 +239,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

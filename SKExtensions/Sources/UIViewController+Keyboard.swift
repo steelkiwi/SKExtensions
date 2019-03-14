@@ -47,11 +47,18 @@ extension UIViewController {
     @objc
     open func setBottomOffsetForKeyboard(_ newValue: CGFloat) {
         let bottomConstraint = self.view.constraints(for: .bottom).filter({
-            return $0.firstItem === self.view.safeAreaLayoutGuide || $0.secondItem === self.view.safeAreaLayoutGuide
+            if #available(iOS 11.0, *) {
+                return $0.firstItem === self.view.safeAreaLayoutGuide || $0.secondItem === self.view.safeAreaLayoutGuide
+            } else {
+                return $0.firstItem === self.bottomLayoutGuide || $0.secondItem === self.bottomLayoutGuide
+            }
         }).first
         
-        bottomConstraint?.constant = newValue
-        
+        if #available(iOS 11.0, *) {
+            bottomConstraint?.constant = bottomConstraint?.firstItem === self.view.safeAreaLayoutGuide ? -newValue : newValue
+        } else {
+            bottomConstraint?.constant = bottomConstraint?.firstItem === self.bottomLayoutGuide ? -newValue : newValue
+        }
         animateLayoutForKeyboard()
     }
     
