@@ -21,7 +21,6 @@
 		777DE209222AC2B3008650A5 /* String+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DE1DE222AC2B2008650A5 /* String+Size.swift */; };
 		777DE20A222AC2B3008650A5 /* String+Substrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DE1DF222AC2B2008650A5 /* String+Substrings.swift */; };
 		777DE20B222AC2B3008650A5 /* Number+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DE1E0222AC2B2008650A5 /* Number+Random.swift */; };
-		777DE20C222AC2B3008650A5 /* UIViewController+UIStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DE1E1222AC2B2008650A5 /* UIViewController+UIStatusBar.swift */; };
 		777DE20D222AC2B3008650A5 /* String+Capitalizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DE1E2222AC2B2008650A5 /* String+Capitalizing.swift */; };
 		777DE20E222AC2B3008650A5 /* UITabBar+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DE1E3222AC2B2008650A5 /* UITabBar+Index.swift */; };
 		777DE20F222AC2B3008650A5 /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DE1E4222AC2B2008650A5 /* UIViewController+Keyboard.swift */; };
@@ -232,6 +231,7 @@
 				TargetAttributes = {
 					777DE16A222ABE18008650A5 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -241,6 +241,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 777DE161222ABE18008650A5;
 			productRefGroup = 777DE16C222ABE18008650A5 /* Products */;
@@ -287,7 +288,6 @@
 				777DE21F222AC2B3008650A5 /* UIImage+Rotation.swift in Sources */,
 				777DE1FF222AC2B3008650A5 /* UIImage+Compress.swift in Sources */,
 				777DE212222AC2B3008650A5 /* UISearchBar.swift in Sources */,
-				777DE20C222AC2B3008650A5 /* UIViewController+UIStatusBar.swift in Sources */,
 				777DE214222AC2B3008650A5 /* Data+JSON.swift in Sources */,
 				777DE219222AC2B3008650A5 /* Int+Counters.swift in Sources */,
 				777DE20B222AC2B3008650A5 /* Number+Random.swift in Sources */,
@@ -458,7 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.steelkiwi.SKExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -483,7 +483,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.steelkiwi.SKExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

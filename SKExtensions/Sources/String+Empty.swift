@@ -12,10 +12,10 @@ import UIKit
 
 public extension String {
     
-    public static var empty: String { return "" }
+    static var empty: String { return "" }
     
     /// Empty check on string excluding whitespaces
-    public var isBlank: Bool {
+    var isBlank: Bool {
         return trimmingCharacters(in: .whitespaces).isEmpty
     }
 }
@@ -23,7 +23,7 @@ public extension String {
 // Extension on Optional type for empty check on unwrapped string
 public extension Optional where Wrapped == String {
     
-    public var isBlank: Bool {
+    var isBlank: Bool {
         return self?.isBlank ?? true
     }
 }

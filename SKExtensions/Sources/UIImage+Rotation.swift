@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIImage {
     
-    public var normalized: UIImage? {
+    var normalized: UIImage? {
         
         guard self.imageOrientation != .up else {
             return self

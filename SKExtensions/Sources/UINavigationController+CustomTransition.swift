@@ -13,7 +13,7 @@ public typealias CATransitionDirection = CATransitionSubtype
 
 public extension UINavigationController {
     
-    public func addTransition(transitionType type: CATransitionType, transitionDirection direction: CATransitionDirection) {
+    func addTransition(transitionType type: CATransitionType, transitionDirection direction: CATransitionDirection) {
         let transition = CATransition()
         transition.duration = 0.35
         transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
@@ -23,12 +23,12 @@ public extension UINavigationController {
         self.view.layer.add(transition, forKey: nil)
     }
 
-    public func pushViewControllerCustom(_ viewController: UIViewController) {
+    func pushViewControllerCustom(_ viewController: UIViewController) {
         self.addTransition(transitionType: .push, transitionDirection: .fromRight)
         self.pushViewController(viewController, animated: false)
     }
     
-    public func popViewControllerCustom() {
+    func popViewControllerCustom() {
         self.addTransition(transitionType: .push, transitionDirection: .fromLeft)
         self.popViewController(animated: false)
     }

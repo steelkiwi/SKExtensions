@@ -8,34 +8,34 @@ import UIKit
 
 public extension String {
     
-    public subscript (ind: Int) -> Character {
+    subscript (ind: Int) -> Character {
         return self[index(startIndex, offsetBy: ind)]
     }
     
-    public subscript (bounds: CountableRange<Int>) -> Substring {
+    subscript (bounds: CountableRange<Int>) -> Substring {
         let start = index(startIndex, offsetBy: bounds.lowerBound)
         let end = index(startIndex, offsetBy: bounds.upperBound)
         return self[start ..< end]
     }
     
-    public subscript (bounds: CountableClosedRange<Int>) -> Substring {
+    subscript (bounds: CountableClosedRange<Int>) -> Substring {
         let start = index(startIndex, offsetBy: bounds.lowerBound)
         let end = index(startIndex, offsetBy: bounds.upperBound)
         return self[start ... end]
     }
     
-    public subscript (bounds: CountablePartialRangeFrom<Int>) -> Substring {
+    subscript (bounds: CountablePartialRangeFrom<Int>) -> Substring {
         let start = index(startIndex, offsetBy: bounds.lowerBound)
         let end = index(endIndex, offsetBy: -1)
         return self[start ... end]
     }
     
-    public subscript (bounds: PartialRangeThrough<Int>) -> Substring {
+    subscript (bounds: PartialRangeThrough<Int>) -> Substring {
         let end = index(startIndex, offsetBy: bounds.upperBound)
         return self[startIndex ... end]
     }
     
-    public subscript (bounds: PartialRangeUpTo<Int>) -> Substring {
+    subscript (bounds: PartialRangeUpTo<Int>) -> Substring {
         let end = index(startIndex, offsetBy: bounds.upperBound)
         return self[startIndex ..< end]
     }
@@ -43,34 +43,34 @@ public extension String {
 
 public extension Substring {
     
-    public subscript (ind: Int) -> Character {
+    subscript (ind: Int) -> Character {
         return self[index(startIndex, offsetBy: ind)]
     }
     
-    public subscript (bounds: CountableRange<Int>) -> Substring {
+    subscript (bounds: CountableRange<Int>) -> Substring {
         let start = index(startIndex, offsetBy: bounds.lowerBound)
         let end = index(startIndex, offsetBy: bounds.upperBound)
         return self[start ..< end]
     }
     
-    public subscript (bounds: CountableClosedRange<Int>) -> Substring {
+    subscript (bounds: CountableClosedRange<Int>) -> Substring {
         let start = index(startIndex, offsetBy: bounds.lowerBound)
         let end = index(startIndex, offsetBy: bounds.upperBound)
         return self[start ... end]
     }
     
-    public subscript (bounds: CountablePartialRangeFrom<Int>) -> Substring {
+    subscript (bounds: CountablePartialRangeFrom<Int>) -> Substring {
         let start = index(startIndex, offsetBy: bounds.lowerBound)
         let end = index(endIndex, offsetBy: -1)
         return self[start ... end]
     }
     
-    public subscript (bounds: PartialRangeThrough<Int>) -> Substring {
+    subscript (bounds: PartialRangeThrough<Int>) -> Substring {
         let end = index(startIndex, offsetBy: bounds.upperBound)
         return self[startIndex ... end]
     }
     
-    public subscript (bounds: PartialRangeUpTo<Int>) -> Substring {
+    subscript (bounds: PartialRangeUpTo<Int>) -> Substring {
         let end = index(startIndex, offsetBy: bounds.upperBound)
         return self[startIndex ..< end]
     }

@@ -10,8 +10,8 @@ import Foundation
 
 public extension Array where Element: Equatable {
     
-    public func before(_ element: Element) -> Element? {
-        guard let index = self.index(of: element),
+    func before(_ element: Element) -> Element? {
+        guard let index = self.firstIndex(of: element),
             element != self.first else {
                 return nil
         }
@@ -21,8 +21,8 @@ public extension Array where Element: Equatable {
         return self[prevIndex]
     }
     
-    public func after(_ element: Element) -> Element? {
-        guard let index = self.index(of: element),
+    func after(_ element: Element) -> Element? {
+        guard let index = self.firstIndex(of: element),
             element != self.last else {
                 return nil
         }

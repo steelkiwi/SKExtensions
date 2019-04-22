@@ -11,7 +11,7 @@ import UIKit
 public extension UIViewController {
     
     /// Detect if controller was presented
-    public var isPresented: Bool {
+    var isPresented: Bool {
         return (self.presentingViewController != nil || self.navigationController?.presentingViewController != nil)
     }
     
@@ -19,7 +19,7 @@ public extension UIViewController {
     /// - Parameter title:          Alert title
     /// - Parameter message:        Alert message
     /// - Parameter buttons:        List of buttons for displaying
-    public func showAlert(title: String? = nil, message: String, buttons: Array<UIAlertAction>) {
+    func showAlert(title: String? = nil, message: String, buttons: Array<UIAlertAction>) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         buttons.forEach({ alert.addAction($0) })
         

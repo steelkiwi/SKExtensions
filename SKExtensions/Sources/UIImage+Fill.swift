@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIImage {
     
-    public convenience init?(color: UIColor, size: CGSize = CGSize.init(width: 1, height: 1), isRound: Bool = false) {
+    convenience init?(color: UIColor, size: CGSize = CGSize.init(width: 1, height: 1), isRound: Bool = false) {
         let rect = CGRect.init(origin: .zero, size: size)
         
         UIGraphicsBeginImageContext(size)

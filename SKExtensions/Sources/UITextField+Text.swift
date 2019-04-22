@@ -9,11 +9,11 @@ import UIKit
 
 public extension UITextField {
     
-    public var textWrapped: String {
+    var textWrapped: String {
         return self.text ?? ""
     }
     
-    public var isEmpty: Bool {
+    var isEmpty: Bool {
         guard let text = self.text else { return true }
         
         return text.isEmpty

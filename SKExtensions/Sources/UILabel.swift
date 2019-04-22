@@ -11,7 +11,7 @@ import UIKit
 
 public extension UILabel {
     
-    public var requiredHeight: CGFloat {
+    var requiredHeight: CGFloat {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: CGFloat.greatestFiniteMagnitude))
         label.numberOfLines = self.numberOfLines
         label.lineBreakMode = self.lineBreakMode

@@ -10,11 +10,11 @@ import UIKit
 
 public extension UIImage {
     
-    public var base64EncodedString: String? {
+    var base64EncodedString: String? {
         return self.pngData()?.base64EncodedString()
     }
     
-    public convenience init?(base64EncodedString: String) {
+    convenience init?(base64EncodedString: String) {
         guard let data = Data.init(base64Encoded: base64EncodedString) else {
             return nil
         }

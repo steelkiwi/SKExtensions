@@ -10,7 +10,7 @@ import UIKit
 
 public extension Int {
     
-    public mutating func increment(limit: Int? = nil) {
+    mutating func increment(limit: Int? = nil) {
         if let limit = limit {
             guard self != limit else { return }
         }
@@ -18,7 +18,7 @@ public extension Int {
         self += 1
     }
     
-    public mutating func decrement(limit: Int? = nil) {
+    mutating func decrement(limit: Int? = nil) {
         if let limit = limit {
             guard self != limit else { return }
         }

@@ -18,7 +18,7 @@ public extension String {
     ///   - width: label width
     ///   - font: label font
     /// - Returns: required height for label with passed width, font and text
-    public func requiredHeight(width: CGFloat, font: UIFont) -> CGFloat {
+    func requiredHeight(width: CGFloat, font: UIFont) -> CGFloat {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: width, height: CGFloat.greatestFiniteMagnitude))
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
@@ -36,7 +36,7 @@ public extension String {
     ///   - width: label width
     ///   - font: label font
     /// - Returns: required height for label with passed width, font and text
-    public func requiredWidth(font: UIFont) -> CGFloat {
+    func requiredWidth(font: UIFont) -> CGFloat {
         let label = UILabel()
         label.font = font
         label.text = self

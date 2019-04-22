@@ -13,7 +13,7 @@ public extension Array {
     // MARK: - Shuffle
     // https://github.com/mergesort/Public-Extension/blob/54a76d67f9ea8de4605ecb57cc42e953748d6620/PublicExtension.playground/Pages/Array.xcplaygroundpage/Contents.swift#L54-L71
     
-    public mutating func shuffle() {
+    mutating func shuffle() {
         // Empty and single-element collections don't shuffle
         guard count > 1 else { return }
         
@@ -25,7 +25,7 @@ public extension Array {
         }
     }
     
-    public func shuffled() -> [Element] {
+    func shuffled() -> [Element] {
         var shuffledArray = self
         shuffledArray.shuffle()
         return shuffledArray

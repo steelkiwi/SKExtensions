@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIImage {
         
-    public func compress(to bytesSize: Int, step: CGFloat = 0.1) -> UIImage {
+    func compress(to bytesSize: Int, step: CGFloat = 0.1) -> UIImage {
         var compression: CGFloat = 1
         
         while compression > 0 {
@@ -29,7 +29,7 @@ public extension UIImage {
         return UIImage.init(data: data)!
     }
     
-    public func compress(to frameLimit: CGSize) -> UIImage? {
+    func compress(to frameLimit: CGSize) -> UIImage? {
         // Don't compress if image size smaller than frameSize
         guard self.size.width > frameLimit.width ||
             self.size.height > frameLimit.height else {

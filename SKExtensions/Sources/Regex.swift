@@ -19,7 +19,7 @@ public struct Regex {
 
 public extension Regex {
     /// Returns true if the string argument matches the expression.
-    public func match(_ text: String) -> Bool {
+    func match(_ text: String) -> Bool {
         // If the regex starts with ^, then it can only match the
         // start of the input
         

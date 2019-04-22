@@ -12,15 +12,15 @@ import UIKit
 
 public extension String {
     
-    public func substring(to index: Int) -> String {
-        guard self.endIndex.encodedOffset >= index else { return self }
+    func substring(to index: Int) -> String {
+        guard self.endIndex.utf16Offset(in: self) >= index else { return self }
         
         let endIndex = self.index(self.startIndex, offsetBy: index)
         return String(self[..<endIndex])
     }
     
-    public func substring(from index: Int) -> String {
-        guard index <= self.endIndex.encodedOffset else { return String.empty }
+    func substring(from index: Int) -> String {
+        guard index <= self.endIndex.utf16Offset(in: self) else { return String.empty }
         
         let startIndex = self.index(self.startIndex, offsetBy: index)
         return String(self[startIndex...])

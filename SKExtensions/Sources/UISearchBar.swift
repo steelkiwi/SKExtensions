@@ -10,7 +10,7 @@ import UIKit
 
 public extension UISearchBar {
     
-    public var cancelButton: UIButton? {
+    var cancelButton: UIButton? {
         guard self.showsCancelButton else { return nil }
         
         return self.subviews.first?.subviews.first(where: { $0 is UIButton }) as? UIButton

@@ -10,7 +10,7 @@ import Foundation
 
 public extension Array where Element == Int {
     
-    public var sum: Int {
+    var sum: Int {
         return self.reduce(0, +)
     }
 }

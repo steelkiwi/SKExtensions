@@ -13,7 +13,7 @@ public extension Array {
     // MARK: - Filter
     
     /// Filter array and returns list of unique passed objects / properties (should conform to Hashable protocol). Example: `unique({ $0.type })` returns an Array of `type` class objects
-    public func uniqueElements<ElementOfResult: Hashable>(_ transform: (Element) throws -> ElementOfResult?) rethrows -> Array<ElementOfResult> {
+    func uniqueElements<ElementOfResult: Hashable>(_ transform: (Element) throws -> ElementOfResult?) rethrows -> Array<ElementOfResult> {
         let elements = try self.compactMap(transform)
         let uniqueSet = Set<ElementOfResult>.init(elements)
         

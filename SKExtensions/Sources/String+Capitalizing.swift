@@ -12,12 +12,12 @@ import UIKit
 
 public extension String {
     
-    public func capitalizedFirstLetter() -> String {
+    func capitalizedFirstLetter() -> String {
         guard let first = self.first else { return .empty }
         return String(first).uppercased() + dropFirst()
     }
     
-    public mutating func capitalizeFirstLetter() {
+    mutating func capitalizeFirstLetter() {
         self = self.capitalizedFirstLetter()
     }
 }

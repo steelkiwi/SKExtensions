@@ -8,7 +8,7 @@
 
 import UIKit
 
-public func +<Key, Value>(left: Dictionary<Key, Value>, right: Dictionary<Key, Value>) -> Dictionary<Key, Value> {
+func +<Key, Value>(left: Dictionary<Key, Value>, right: Dictionary<Key, Value>) -> Dictionary<Key, Value> {
     
     var result = left
     right.forEach{ result[$0] = $1 }
@@ -18,7 +18,7 @@ public func +<Key, Value>(left: Dictionary<Key, Value>, right: Dictionary<Key, V
 
 public extension Dictionary {
     
-    public mutating func append(contentsOf right: Dictionary) {
+    mutating func append(contentsOf right: Dictionary) {
         for (key, value) in right {
             self[key] = value
         }

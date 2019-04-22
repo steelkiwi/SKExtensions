@@ -10,11 +10,11 @@ import UIKit
 
 public extension UITabBar {
     
-    public var selectedIndex: Int? {
+    var selectedIndex: Int? {
         get {
             guard let items = self.items,
                 let selected = self.selectedItem,
-                let index = items.index(of: selected) else {
+                let index = items.firstIndex(of: selected) else {
                     return nil
             }
             

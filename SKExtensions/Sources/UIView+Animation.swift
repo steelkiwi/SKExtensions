@@ -12,7 +12,7 @@ public let kAnimationDurationDefault: Double = 0.35
 
 public extension UIView {
     
-    public class func animate(animations: @escaping () -> Swift.Void) {
+    class func animate(animations: @escaping () -> Swift.Void) {
         self.animate(withDuration: kAnimationDurationDefault, animations: animations)
     }
 }

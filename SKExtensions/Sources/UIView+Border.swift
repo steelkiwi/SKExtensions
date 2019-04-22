@@ -12,13 +12,13 @@ import UIKit
 public extension UIView {
     
     @IBInspectable
-    public var borderWidth: CGFloat {
+    var borderWidth: CGFloat {
         get { return layer.borderWidth }
         set { layer.borderWidth = newValue }
     }
     
     @IBInspectable
-    public var borderColor: UIColor {
+    var borderColor: UIColor {
         get { return UIColor.init(cgColor: layer.borderColor!) }
         set { layer.borderColor = newValue.cgColor }
     }

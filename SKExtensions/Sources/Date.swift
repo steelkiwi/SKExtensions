@@ -10,5 +10,5 @@ import Foundation
 
 public extension Date {
     
-    public var isToday: Bool { return Calendar.current.isDateInToday(self) }
+    var isToday: Bool { return Calendar.current.isDateInToday(self) }
 }

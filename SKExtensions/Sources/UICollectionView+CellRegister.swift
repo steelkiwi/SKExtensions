@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UICollectionViewCell {
-    public static var identifier: String { return String(describing: self) }
+    static var identifier: String { return String(describing: self) }
 }
 
 public extension UICollectionView {
@@ -23,7 +23,7 @@ public extension UICollectionView {
     ///   - cellClass:  UITableViewCell subclass class
     ///   - isNib:      Is cell stored in .xib file or just in code. Default is true
     ///   - identifier: The reuse identifier to associate with the specified nib file. Default value is `identifier` property.
-    public func register<T>(_ cellClass: T.Type, isNib: Bool = true, forCellWithReuseIdentifier identifier: String = T.identifier) where T: UICollectionViewCell {
+    func register<T>(_ cellClass: T.Type, isNib: Bool = true, forCellWithReuseIdentifier identifier: String = T.identifier) where T: UICollectionViewCell {
         if isNib {
             self.register(UINib(nibName: String(describing: T.classForCoder()), bundle: nil), forCellWithReuseIdentifier: identifier)
         } else {
@@ -40,7 +40,7 @@ public extension UICollectionView {
     ///   - identifier: The reuse identifier to associate with the specified nib file. Default value is `identifier` property.
     ///   - indexPath: The index path specifying the location of the cell. The data source receives this information when it is asked for the cell and should just pass it along. This method uses the index path to perform additional configuration based on the cell’s position in the collection view.
     /// - Returns: Dequed cell for passed as generic class. Can fail if cell not registered
-    public func dequeueReusableCell<T>(withReuseIdentifier identifier: String = T.identifier, for indexPath: IndexPath) -> T where T: UICollectionViewCell {
+    func dequeueReusableCell<T>(withReuseIdentifier identifier: String = T.identifier, for indexPath: IndexPath) -> T where T: UICollectionViewCell {
         guard let cell = self.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as? T else {
             assertionFailure("Cell \(T.classForCoder()) not registered in collectionView")
             return T()

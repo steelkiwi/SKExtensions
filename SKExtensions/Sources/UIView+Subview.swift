@@ -11,17 +11,17 @@ import UIKit
 
 public extension UIView {
     
-    public var siblings: [UIView]? {
+    var siblings: [UIView]? {
         if let stackView = superview as? UIStackView { return stackView.arrangedSubviews }
         
         return superview?.subviews
     }
     
-    public func addSubviewWithConstraints(_ view: UIView, insets: UIEdgeInsets = .zero) {
+    func addSubviewWithConstraints(_ view: UIView, insets: UIEdgeInsets = .zero) {
         self.addSubviewWithConstraints(view, top: insets.top, left: insets.left, bottom: insets.bottom, right: insets.right)
     }
     
-    public func addSubviewWithConstraints(_ view: UIView, top: CGFloat? = nil, left: CGFloat? = nil, bottom: CGFloat? = nil, right: CGFloat? = nil) {
+    func addSubviewWithConstraints(_ view: UIView, top: CGFloat? = nil, left: CGFloat? = nil, bottom: CGFloat? = nil, right: CGFloat? = nil) {
         self.addSubview(view)
         
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -32,7 +32,7 @@ public extension UIView {
         if let right = right    { view.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -right).isActive = true }
     }
     
-    public var viewContentSize: CGSize {
+    var viewContentSize: CGSize {
         guard subviews.isEmpty == false,
             let minX = subviews.map({ $0.frame.minX }).min(),
             let maxX = subviews.map({ $0.frame.maxX }).max(),

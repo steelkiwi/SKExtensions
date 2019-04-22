@@ -14,13 +14,13 @@ public extension UIView {
     private var halfHeight: CGFloat { return self.bounds.height / 2 }
     
     @IBInspectable
-    public var isRound: Bool {
+    var isRound: Bool {
         get { return self.cornerRadius == halfHeight }
         set { self.cornerRadius = halfHeight }
     }
     
     @IBInspectable
-    public var cornerRadius: CGFloat {
+    var cornerRadius: CGFloat {
         get { return self.layer.cornerRadius }
         set {
             self.layer.masksToBounds = newValue != 0

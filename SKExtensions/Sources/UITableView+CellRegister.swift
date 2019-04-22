@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UITableViewCell {
-    public static var identifier: String { return String(describing: self) }
+    static var identifier: String { return String(describing: self) }
 }
 
 public extension UITableView {
@@ -23,7 +23,7 @@ public extension UITableView {
     ///   - cellClass:  UITableViewCell subclass class
     ///   - isNib:      Is cell stored in .xib file or just in code. Default is true
     ///   - identifier: The reuse identifier to associate with the specified nib file. Default value is `identifier` property.
-    public func register<T>(_ cellClass: T.Type, isNib: Bool = true, forCellReuseIdentifier identifier: String = T.identifier) where T: UITableViewCell {
+    func register<T>(_ cellClass: T.Type, isNib: Bool = true, forCellReuseIdentifier identifier: String = T.identifier) where T: UITableViewCell {
         if isNib {
             self.register(UINib(nibName: String(describing: T.classForCoder()), bundle: nil), forCellReuseIdentifier: identifier)
         } else {
@@ -39,7 +39,7 @@ public extension UITableView {
     /// - Parameters:
     ///   - identifier: The reuse identifier to associate with the specified nib file. Default value is `identifier` property.
     /// - Returns: Dequed cell for passed as generic class. Can fail if cell not registered
-    public func dequeueReusableCell<T>(withIdentifier identifier: String = T.identifier) -> T where T: UITableViewCell {
+    func dequeueReusableCell<T>(withIdentifier identifier: String = T.identifier) -> T where T: UITableViewCell {
         guard let cell = self.dequeueReusableCell(withIdentifier: identifier) as? T else {
             assertionFailure("Cell \(T.classForCoder()) not registered in tableView")
             return T()
