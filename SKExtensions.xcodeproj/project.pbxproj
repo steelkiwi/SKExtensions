@@ -69,7 +69,6 @@
 		777DE1DE222AC2B2008650A5 /* String+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Size.swift"; sourceTree = "<group>"; };
 		777DE1DF222AC2B2008650A5 /* String+Substrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Substrings.swift"; sourceTree = "<group>"; };
 		777DE1E0222AC2B2008650A5 /* Number+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+Random.swift"; sourceTree = "<group>"; };
-		777DE1E1222AC2B2008650A5 /* UIViewController+UIStatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIStatusBar.swift"; sourceTree = "<group>"; };
 		777DE1E2222AC2B2008650A5 /* String+Capitalizing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Capitalizing.swift"; sourceTree = "<group>"; };
 		777DE1E3222AC2B2008650A5 /* UITabBar+Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar+Index.swift"; sourceTree = "<group>"; };
 		777DE1E4222AC2B2008650A5 /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
@@ -154,7 +153,6 @@
 				777DE1DE222AC2B2008650A5 /* String+Size.swift */,
 				777DE1DF222AC2B2008650A5 /* String+Substrings.swift */,
 				777DE1E0222AC2B2008650A5 /* Number+Random.swift */,
-				777DE1E1222AC2B2008650A5 /* UIViewController+UIStatusBar.swift */,
 				777DE1E2222AC2B2008650A5 /* String+Capitalizing.swift */,
 				777DE1E3222AC2B2008650A5 /* UITabBar+Index.swift */,
 				777DE1E4222AC2B2008650A5 /* UIViewController+Keyboard.swift */,
