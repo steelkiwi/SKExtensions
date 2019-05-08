@@ -9,7 +9,21 @@
 import UIKit
 
 public extension UIImage {
+    
+    // MARK: - Size info
+    
+    var sizeBytes: Int? {
+        return self.jpegData(compressionQuality: 1)?.count
+    }
+    
+    var sizeMB: CGFloat? {
+        guard let sizeBytes = sizeBytes else { return nil }
         
+        return CGFloat(sizeBytes) / 1024 / 1024
+    }
+    
+    // MARK: - Compress
+    
     func compress(to bytesSize: Int, step: CGFloat = 0.1) -> UIImage {
         var compression: CGFloat = 1
         
