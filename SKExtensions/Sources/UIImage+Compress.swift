@@ -29,15 +29,17 @@ public extension UIImage {
         
         while compression > 0 {
             guard let data = self.jpegData(compressionQuality: compression),
-                data.count < bytesSize else {
+                let compressed = UIImage.init(data: data),
+                let compressedSize = compressed.sizeBytes,
+                compressedSize < bytesSize else {
                     compression -= step
                     continue
             }
             
-            return UIImage.init(data: data)!
+            return compressed
         }
         
-        assertionFailure("Failed to compress image with passed parameters")
+        print("Image Compression - Failed to compress image with passed parameters")
         
         let data = self.jpegData(compressionQuality: step)!
         return UIImage.init(data: data)!
@@ -60,12 +62,12 @@ public extension UIImage {
         
         let newSize = CGSize.init(width: newW, height: newH)
         
-        UIGraphicsBeginImageContextWithOptions(newSize, false, scale)
+        UIGraphicsBeginImageContext(newSize)
         defer { UIGraphicsEndImageContext() }
         draw(in: CGRect(origin: .zero, size: newSize))
         
         guard let scaled = UIGraphicsGetImageFromCurrentImageContext() else {
-            assertionFailure("Failed to compress image to passed size")
+            print("Image Compression - Failed to compress image to passed size")
             return nil
         }
         
