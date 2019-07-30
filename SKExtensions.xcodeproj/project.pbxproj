@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770FF1BA22F0205A00A1E981 /* UserDefaults+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770FF1B922F0205A00A1E981 /* UserDefaults+UIColor.swift */; };
 		777DE170222ABE18008650A5 /* SKExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 777DE16E222ABE18008650A5 /* SKExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		777DE1FF222AC2B3008650A5 /* UIImage+Compress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DE1D4222AC2B2008650A5 /* UIImage+Compress.swift */; };
 		777DE200222AC2B3008650A5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DE1D5222AC2B2008650A5 /* Constants.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		770FF1B922F0205A00A1E981 /* UserDefaults+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+UIColor.swift"; sourceTree = "<group>"; };
 		777DE16B222ABE18008650A5 /* SKExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		777DE16E222ABE18008650A5 /* SKExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKExtensions.h; sourceTree = "<group>"; };
 		777DE16F222ABE18008650A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				777DE1FC222AC2B3008650A5 /* UICollectionView+CellRegister.swift */,
 				777DE1FD222AC2B3008650A5 /* UINavigationController.swift */,
 				777DE1FE222AC2B3008650A5 /* UIView+Animation.swift */,
+				770FF1B922F0205A00A1E981 /* UserDefaults+UIColor.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				777DE20F222AC2B3008650A5 /* UIViewController+Keyboard.swift in Sources */,
+				770FF1BA22F0205A00A1E981 /* UserDefaults+UIColor.swift in Sources */,
 				777DE21E222AC2B3008650A5 /* Dictionary.swift in Sources */,
 				777DE222222AC2B3008650A5 /* UIViewController.swift in Sources */,
 				777DE227222AC2B3008650A5 /* UICollectionView+CellRegister.swift in Sources */,
