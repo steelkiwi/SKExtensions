@@ -7,12 +7,13 @@
 
 import UIKit
 
+@available(iOS 11.0, *)
 extension UserDefaults {
     
     func color(forKey key: String) -> UIColor? {
         guard let data = data(forKey: key) else { return nil }
         
-        return try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? UIColor
+        return (try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data)) as? UIColor
     }
     
     func set(_ color: UIColor?, forKey key: String) {
