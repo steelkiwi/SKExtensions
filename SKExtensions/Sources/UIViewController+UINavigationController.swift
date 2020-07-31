@@ -10,7 +10,9 @@ import UIKit
 public extension UIViewController {
     
     func removeBackButtonTitle() {
-        self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .plain, target: nil, action: nil)
+        DispatchQueue.main.async {
+            self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .plain, target: nil, action: nil)
+        }
     }
     
     func wrappedInNC() -> UINavigationController {
