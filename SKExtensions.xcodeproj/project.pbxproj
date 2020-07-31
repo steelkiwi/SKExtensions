@@ -55,6 +55,7 @@
 		77A3719724D3FEF00077AAC4 /* CGAffineTransform+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3719624D3FEF00077AAC4 /* CGAffineTransform+Init.swift */; };
 		77A3719924D3FF740077AAC4 /* UIApplication+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3719824D3FF740077AAC4 /* UIApplication+SafeArea.swift */; };
 		77A3719B24D3FFD00077AAC4 /* UIStackView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3719A24D3FFD00077AAC4 /* UIStackView+Subviews.swift */; };
+		77A3719D24D400FB0077AAC4 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3719C24D400FB0077AAC4 /* UIViewController+Navigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +109,7 @@
 		77A3719624D3FEF00077AAC4 /* CGAffineTransform+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGAffineTransform+Init.swift"; sourceTree = "<group>"; };
 		77A3719824D3FF740077AAC4 /* UIApplication+SafeArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+SafeArea.swift"; sourceTree = "<group>"; };
 		77A3719A24D3FFD00077AAC4 /* UIStackView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Subviews.swift"; sourceTree = "<group>"; };
+		77A3719C24D400FB0077AAC4 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				777DE1EC222AC2B2008650A5 /* UINavigationController+CustomTransition.swift */,
 				777DE1E7222AC2B2008650A5 /* UISearchBar.swift */,
 				77A3719A24D3FFD00077AAC4 /* UIStackView+Subviews.swift */,
+				77A3719C24D400FB0077AAC4 /* UIViewController+Navigation.swift */,
 				777DE1E3222AC2B2008650A5 /* UITabBar+Index.swift */,
 				777DE1F5222AC2B2008650A5 /* UITableView+CellRegister.swift */,
 				777DE1D7222AC2B2008650A5 /* UITextField+Text.swift */,
@@ -293,6 +296,7 @@
 				777DE203222AC2B3008650A5 /* UIImage+Fill.swift in Sources */,
 				777DE202222AC2B3008650A5 /* UITextField+Text.swift in Sources */,
 				777DE21A222AC2B3008650A5 /* Array+Filter.swift in Sources */,
+				77A3719D24D400FB0077AAC4 /* UIViewController+Navigation.swift in Sources */,
 				777DE208222AC2B3008650A5 /* Array+Elements.swift in Sources */,
 				777DE221222AC2B3008650A5 /* UITextView+Text.swift in Sources */,
 				777DE223222AC2B3008650A5 /* DateFormatter.swift in Sources */,

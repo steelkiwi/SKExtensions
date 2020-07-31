@@ -10,11 +10,6 @@ import UIKit
 
 public extension UIViewController {
     
-    /// Detect if controller was presented
-    var isPresented: Bool {
-        return (self.presentingViewController != nil || self.navigationController?.presentingViewController != nil)
-    }
-    
     /// Simple alert popup extension
     /// - Parameter title:          Alert title
     /// - Parameter message:        Alert message
