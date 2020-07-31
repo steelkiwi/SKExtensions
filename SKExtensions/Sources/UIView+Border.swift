@@ -9,17 +9,20 @@ import UIKit
 
 // MARK: - Borders
 
-public extension UIView {
+extension UIView {
     
     @IBInspectable
-    var borderWidth: CGFloat {
+    open var borderWidth: CGFloat {
         get { return layer.borderWidth }
         set { layer.borderWidth = newValue }
     }
     
     @IBInspectable
-    var borderColor: UIColor {
-        get { return UIColor.init(cgColor: layer.borderColor!) }
-        set { layer.borderColor = newValue.cgColor }
+    open var borderColor: UIColor? {
+        get {
+            guard let cgColor = layer.borderColor else { return nil }
+            return UIColor.init(cgColor: cgColor)
+        }
+        set { layer.borderColor = newValue?.cgColor }
     }
 }
