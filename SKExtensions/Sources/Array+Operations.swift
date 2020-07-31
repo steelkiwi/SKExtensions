@@ -14,3 +14,10 @@ public extension Array where Element == Int {
         return self.reduce(0, +)
     }
 }
+
+public extension Array where Element == Double {
+    
+    var sum: Double {
+        return self.reduce(0, +)
+    }
+}
