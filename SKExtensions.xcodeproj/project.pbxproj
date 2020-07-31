@@ -51,6 +51,7 @@
 		777DE227222AC2B3008650A5 /* UICollectionView+CellRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DE1FC222AC2B3008650A5 /* UICollectionView+CellRegister.swift */; };
 		777DE228222AC2B3008650A5 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DE1FD222AC2B3008650A5 /* UINavigationController.swift */; };
 		777DE229222AC2B3008650A5 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DE1FE222AC2B3008650A5 /* UIView+Animation.swift */; };
+		779A95F42420E778000E5D9E /* String+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A95F32420E778000E5D9E /* String+Hash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		777DE1FC222AC2B3008650A5 /* UICollectionView+CellRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CellRegister.swift"; sourceTree = "<group>"; };
 		777DE1FD222AC2B3008650A5 /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		777DE1FE222AC2B3008650A5 /* UIView+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
+		779A95F32420E778000E5D9E /* String+Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Hash.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				777DE1DE222AC2B2008650A5 /* String+Size.swift */,
 				777DE1EA222AC2B2008650A5 /* String+Substring.swift */,
 				777DE1DF222AC2B2008650A5 /* String+Substrings.swift */,
+				779A95F32420E778000E5D9E /* String+Hash.swift */,
 				777DE1FC222AC2B3008650A5 /* UICollectionView+CellRegister.swift */,
 				777DE1DC222AC2B2008650A5 /* UIColor.swift */,
 				777DE1DA222AC2B2008650A5 /* UIImage+Base64.swift */,
@@ -271,6 +274,7 @@
 			files = (
 				777DE20F222AC2B3008650A5 /* UIViewController+Keyboard.swift in Sources */,
 				770FF1BA22F0205A00A1E981 /* UserDefaults+UIColor.swift in Sources */,
+				779A95F42420E778000E5D9E /* String+Hash.swift in Sources */,
 				777DE21E222AC2B3008650A5 /* Dictionary.swift in Sources */,
 				777DE222222AC2B3008650A5 /* UIViewController.swift in Sources */,
 				777DE227222AC2B3008650A5 /* UICollectionView+CellRegister.swift in Sources */,
