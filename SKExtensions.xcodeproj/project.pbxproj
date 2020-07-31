@@ -56,6 +56,7 @@
 		77A3719924D3FF740077AAC4 /* UIApplication+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3719824D3FF740077AAC4 /* UIApplication+SafeArea.swift */; };
 		77A3719B24D3FFD00077AAC4 /* UIStackView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3719A24D3FFD00077AAC4 /* UIStackView+Subviews.swift */; };
 		77A3719D24D400FB0077AAC4 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3719C24D400FB0077AAC4 /* UIViewController+Navigation.swift */; };
+		77A3719F24D4015B0077AAC4 /* UITableView+ViewRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3719E24D4015A0077AAC4 /* UITableView+ViewRegister.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		77A3719824D3FF740077AAC4 /* UIApplication+SafeArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+SafeArea.swift"; sourceTree = "<group>"; };
 		77A3719A24D3FFD00077AAC4 /* UIStackView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Subviews.swift"; sourceTree = "<group>"; };
 		77A3719C24D400FB0077AAC4 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		77A3719E24D4015A0077AAC4 /* UITableView+ViewRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ViewRegister.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,9 +188,9 @@
 				777DE1EC222AC2B2008650A5 /* UINavigationController+CustomTransition.swift */,
 				777DE1E7222AC2B2008650A5 /* UISearchBar.swift */,
 				77A3719A24D3FFD00077AAC4 /* UIStackView+Subviews.swift */,
-				77A3719C24D400FB0077AAC4 /* UIViewController+Navigation.swift */,
 				777DE1E3222AC2B2008650A5 /* UITabBar+Index.swift */,
 				777DE1F5222AC2B2008650A5 /* UITableView+CellRegister.swift */,
+				77A3719E24D4015A0077AAC4 /* UITableView+ViewRegister.swift */,
 				777DE1D7222AC2B2008650A5 /* UITextField+Text.swift */,
 				777DE1F6222AC2B2008650A5 /* UITextView+Text.swift */,
 				777DE1FE222AC2B3008650A5 /* UIView+Animation.swift */,
@@ -197,6 +199,7 @@
 				777DE1FA222AC2B3008650A5 /* UIView+Subview.swift */,
 				777DE1F7222AC2B2008650A5 /* UIViewController.swift */,
 				777DE1E4222AC2B2008650A5 /* UIViewController+Keyboard.swift */,
+				77A3719C24D400FB0077AAC4 /* UIViewController+Navigation.swift */,
 				777DE1DB222AC2B2008650A5 /* UIViewController+UINavigationController.swift */,
 				777DE1E5222AC2B2008650A5 /* UIViewControllerExtension.swift */,
 				770FF1B922F0205A00A1E981 /* UserDefaults+UIColor.swift */,
@@ -286,6 +289,7 @@
 			files = (
 				77A3719B24D3FFD00077AAC4 /* UIStackView+Subviews.swift in Sources */,
 				777DE20F222AC2B3008650A5 /* UIViewController+Keyboard.swift in Sources */,
+				77A3719F24D4015B0077AAC4 /* UITableView+ViewRegister.swift in Sources */,
 				770FF1BA22F0205A00A1E981 /* UserDefaults+UIColor.swift in Sources */,
 				779A95F42420E778000E5D9E /* String+Hash.swift in Sources */,
 				777DE21E222AC2B3008650A5 /* Dictionary.swift in Sources */,
