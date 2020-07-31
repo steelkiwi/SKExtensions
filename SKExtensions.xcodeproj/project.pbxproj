@@ -54,6 +54,7 @@
 		779A95F42420E778000E5D9E /* String+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A95F32420E778000E5D9E /* String+Hash.swift */; };
 		77A3719724D3FEF00077AAC4 /* CGAffineTransform+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3719624D3FEF00077AAC4 /* CGAffineTransform+Init.swift */; };
 		77A3719924D3FF740077AAC4 /* UIApplication+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3719824D3FF740077AAC4 /* UIApplication+SafeArea.swift */; };
+		77A3719B24D3FFD00077AAC4 /* UIStackView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3719A24D3FFD00077AAC4 /* UIStackView+Subviews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,7 @@
 		779A95F32420E778000E5D9E /* String+Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Hash.swift"; sourceTree = "<group>"; };
 		77A3719624D3FEF00077AAC4 /* CGAffineTransform+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGAffineTransform+Init.swift"; sourceTree = "<group>"; };
 		77A3719824D3FF740077AAC4 /* UIApplication+SafeArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+SafeArea.swift"; sourceTree = "<group>"; };
+		77A3719A24D3FFD00077AAC4 /* UIStackView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Subviews.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +156,6 @@
 				777DE1EB222AC2B2008650A5 /* Array+Shuffle.swift */,
 				777DE1D9222AC2B2008650A5 /* Array+Subarray.swift */,
 				77A3719624D3FEF00077AAC4 /* CGAffineTransform+Init.swift */,
-				77A3719824D3FF740077AAC4 /* UIApplication+SafeArea.swift */,
 				777DE1D5222AC2B2008650A5 /* Constants.swift */,
 				777DE1E9222AC2B2008650A5 /* Data+JSON.swift */,
 				777DE1D6222AC2B2008650A5 /* Date.swift */,
@@ -171,6 +172,7 @@
 				777DE1DE222AC2B2008650A5 /* String+Size.swift */,
 				777DE1EA222AC2B2008650A5 /* String+Substring.swift */,
 				777DE1DF222AC2B2008650A5 /* String+Substrings.swift */,
+				77A3719824D3FF740077AAC4 /* UIApplication+SafeArea.swift */,
 				777DE1FC222AC2B3008650A5 /* UICollectionView+CellRegister.swift */,
 				777DE1DC222AC2B2008650A5 /* UIColor.swift */,
 				777DE1DA222AC2B2008650A5 /* UIImage+Base64.swift */,
@@ -181,6 +183,7 @@
 				777DE1FD222AC2B3008650A5 /* UINavigationController.swift */,
 				777DE1EC222AC2B2008650A5 /* UINavigationController+CustomTransition.swift */,
 				777DE1E7222AC2B2008650A5 /* UISearchBar.swift */,
+				77A3719A24D3FFD00077AAC4 /* UIStackView+Subviews.swift */,
 				777DE1E3222AC2B2008650A5 /* UITabBar+Index.swift */,
 				777DE1F5222AC2B2008650A5 /* UITableView+CellRegister.swift */,
 				777DE1D7222AC2B2008650A5 /* UITextField+Text.swift */,
@@ -278,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77A3719B24D3FFD00077AAC4 /* UIStackView+Subviews.swift in Sources */,
 				777DE20F222AC2B3008650A5 /* UIViewController+Keyboard.swift in Sources */,
 				770FF1BA22F0205A00A1E981 /* UserDefaults+UIColor.swift in Sources */,
 				779A95F42420E778000E5D9E /* String+Hash.swift in Sources */,
