@@ -1,6 +1,6 @@
 //
 //  UIViewController+Navigation.swift
-//  Boxiz
+//  
 //
 //  Created by Viktor Olesenko on 22.06.20.
 //
