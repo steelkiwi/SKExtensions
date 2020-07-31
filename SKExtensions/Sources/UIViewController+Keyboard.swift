@@ -35,6 +35,9 @@ extension UIViewController {
     
     @objc
     private func keyboardWillShow(_ notification: NSNotification) {
+        // Handle kb opening only if app is active
+        guard UIApplication.shared.applicationState == .active else { return }
+        
         let bottomOffset = keyboardHeight(notification)
         setBottomOffsetForKeyboard(bottomOffset)
     }
