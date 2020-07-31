@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIStackView {
+public extension UIStackView {
     
     // https://gist.github.com/Deub27/5eadbf1b77ce28abd9b630eadb95c1e2#gistcomment-2818687
     @discardableResult

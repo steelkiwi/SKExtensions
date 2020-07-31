@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIApplication {
+public extension UIApplication {
     
     var safeAreaInsets: UIEdgeInsets {
         if #available(iOS 11.0, *) {

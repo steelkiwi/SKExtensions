@@ -9,7 +9,7 @@
 import Foundation
 import CoreGraphics
 
-extension CGAffineTransform {
+public extension CGAffineTransform {
         
     init(scale: CGFloat) {
         self.init(scaleX: scale, y: scale)
