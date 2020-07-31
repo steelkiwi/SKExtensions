@@ -32,6 +32,15 @@ public extension UIView {
         if let right = right    { view.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -right).isActive = true }
     }
     
+    func addSubviewWithCenterConstraints(_ view: UIView) {
+        self.addSubview(view)
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        view.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+    }
+    
     var viewContentSize: CGSize {
         guard subviews.isEmpty == false,
             let minX = subviews.map({ $0.frame.minX }).min(),
